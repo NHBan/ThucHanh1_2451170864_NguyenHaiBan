@@ -1,0 +1,44 @@
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.container-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    color:black;
+}
+.container-nav{
+    display: flex;
+    gap:20px;
+}
+.menu{
+    display: none;
+}
+#checked{
+    width: 30px;
+}
+#checked:checked ~ .menu{
+    display: block;
+}
+nav{
+    gap:20px;
+}
+nav a{
+    color:black;
+}
+.text-decoration-none{
+    text-decoration: none;
+}
+.list-type-none{
+    list-style-type: none;
+}
+nav a:hover{
+    color:white;
+}
+.content{
+    margin-top: 100px;
+}
