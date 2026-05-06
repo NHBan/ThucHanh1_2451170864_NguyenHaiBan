@@ -1,14 +1,19 @@
-header{
-    position: fixed;
-    top:0;
-    width: 100%;
+
+*{
+    font-family: var(--font-main);
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-light);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 .container-header{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
     color:black;
 }
 .container-nav{
@@ -22,7 +27,7 @@ header{
     width: 30px;
 }
 #checked:checked ~ .menu{
-    display: block;
+    display: flex;
 }
 nav{
     gap:20px;
@@ -41,4 +46,13 @@ nav a:hover{
 }
 .content{
     margin-top: 100px;
+}
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-items-center{
+    align-items: center;
 }
