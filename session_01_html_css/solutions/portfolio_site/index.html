@@ -15,22 +15,19 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-header">
-            <div class="logo">YourName</div>
-            <div class="justify-content-center align-items-center d-flex">
-                <input type="checkbox" id="checked">
-                <nav class="menu">
-                    <ul class="container-nav">
-                        <li class="list-type-none"><a href="#about" class="text-decoration-none">About</a></li>
-                        <li class="list-type-none"><a href="#skills" class="text-decoration-none">Skills</a></li>
-                        <li class="list-type-none"><a href="#portfolio" class="text-decoration-none">Portfolio</a></li>
-                        <li class="list-type-none"><a href="#contact" class="text-decoration-none">Contact</a></li>
-                    </ul>
-            </div>
-        </div>
-        </nav>
-    </header>
+<header>
+    <div class="logo">YourName</div>
+    <input type="checkbox" id="menu-toggle" hidden>
+    
+    <label for="menu-toggle" class="hamburger">☰
+    </label>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
     <main>
         <section class="hero">
             <h1>Hi, I'm [Your Name]</h1>
@@ -54,7 +51,8 @@
                 </div>
             </div>
         </section>
-        <!-- ===== SKILLS SECTION ===== -->
+
+
         <section id="skills" class="skills-section">
             <div class="container">
                 <h2 class="section-title">My Skills</h2>
