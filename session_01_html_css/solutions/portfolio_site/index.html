@@ -106,39 +106,68 @@
                     <button class="filter-btn">Design</button>
                 </div>
                 <div class="portfolio-grid">
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://picsum.photos/400/300?random=1" alt="Project 1">
-                        <div class="portfolio-overlay">
-                            <h3>E-Commerce Website</h3>
-                            <p>React + Node.js</p>
-                        </div>
-                    </div>
+                    <!-- Bọc mỗi portfolio item trong anchor tag -->
+<a href="#lightbox-1" class="portfolio-item" data-category="web">
+    <img src="https://picsum.photos/400/300?random=1" alt="Project 1">
+    <div class="portfolio-overlay">
+        <h3>E-Commerce Website</h3>
+        <p>React + Node.js</p>
+    </div>
+</a>
                     <!-- Thêm 5 items khác với random=2,3,4,5,6 -->
-                    <div class="portfolio-item" data-category="design">
-                        <img src="https://picsum.photos/400/300?random=4" alt="Brand Identity">
-                        <div class="portfolio-overlay">
-                            <h3>Brand Identity</h3>
-                            <p>Figma + Illustrator</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="web">
-                        <img src="https://picsum.photos/400/300?random=5" alt="Task Manager">
-                        <div class="portfolio-overlay">
-                            <h3>Task Manager</h3>
-                            <p>Angular + MongoDB</p>
-                        </div>
-                    </div>
-                    <div class="portfolio-item" data-category="mobile">
-                        <img src="https://picsum.photos/400/300?random=6" alt="Food Delivery">
-                        <div class="portfolio-overlay">
-                            <h3>Food Delivery</h3>
-                            <p>Flutter + Dart</p>
-                        </div>
-                    </div>
+                    <a href="#lightbox-4" class="portfolio-item" data-category="design">
+    <img src="https://picsum.photos/400/300?random=4" alt="Brand Identity">
+    <div class="portfolio-overlay">
+        <h3>Brand Identity</h3>
+        <p>Figma + Illustrator</p>
+    </div>
+</a>
+
+<a href="#lightbox-5" class="portfolio-item" data-category="web">
+    <img src="https://picsum.photos/400/300?random=5" alt="Task Manager">
+    <div class="portfolio-overlay">
+        <h3>Task Manager</h3>
+        <p>Angular + MongoDB</p>
+    </div>
+</a>
+
+<a href="#lightbox-6" class="portfolio-item" data-category="mobile">
+    <img src="https://picsum.photos/400/300?random=6" alt="Food Delivery">
+    <div class="portfolio-overlay">
+        <h3>Food Delivery</h3>
+        <p>Flutter + Dart</p>
+    </div>
+</a>
                 </div>
             </div>
         </section>
     </main>
+    <div id="lightbox-1" class="lightbox">
+    <div class="lightbox-content">
+        <img src="https://picsum.photos/800/600?random=1" alt="Project 1">
+        <a href="#!" class="lightbox-close">&times;</a>
+    </div>
+</div>
+<div id="lightbox-4" class="lightbox">
+    <div class="lightbox-content">
+        <img src="https://picsum.photos/800/600?random=4" alt="Brand Identity">
+        <a href="#!" class="lightbox-close">&times;</a>
+    </div>
+</div>
+
+<div id="lightbox-5" class="lightbox">
+    <div class="lightbox-content">
+        <img src="https://picsum.photos/800/600?random=5" alt="Task Manager">
+        <a href="#!" class="lightbox-close">&times;</a>
+    </div>
+</div>
+
+<div id="lightbox-6" class="lightbox">
+    <div class="lightbox-content">
+        <img src="https://picsum.photos/800/600?random=6" alt="Food Delivery">
+        <a href="#!" class="lightbox-close">&times;</a>
+    </div>
+</div>
 </body>
 <script>
     // Intersection Observer — trigger animation khi element hiện ra
